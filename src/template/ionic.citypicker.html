@@ -1,0 +1,54 @@
+<div ng-class="{'city-picker-backdrop' : vm.backdrop }">
+<ion-modal-view  class="city-picker-bg">
+<div class="city-bgclose" ng-click="vm.clickToClose()" ></div>
+<div class="city-picker ">
+  <div class="bar bar-header bar-light">
+    <div class="buttons">
+        <button class="button button-clear button-positive" ng-click="vm.returnCancel()" ng-bind-html="::vm.closeText"></button>
+      </div>
+      <h1 class="title" ng-bind-html="::vm.areaTitle"></h1>
+      <div class="buttons">
+        <button class="button button-clear button-positive" ng-click="vm.returnOk()" ng-bind-html="::vm.buttonText"></button>
+      </div>
+  </div>
+
+  <header class="bar city-picker-header" ng-class="vm.barCssClass">
+    <div class="row">
+    <div class="col col-25" style="padding-right:0" ng-show="vm.itemTab1 === true" ng-click="vm.tab1()"><span class="item-tabs" ng-class="{itemTabsActive:vm.showItem1}" ng-bind="vm.itemText1"></span></div>
+      <div class="col col-25" style="padding-right:0" ng-show="vm.itemTab2 === true" ng-click="vm.tab2()"><span class="item-tabs" ng-class="{itemTabsActive:vm.showItem2}" ng-bind="vm.itemText2"></span></div>
+      <div class="col col-50" style="padding-right:0" ng-show="vm.itemTab3 === true" ng-click="vm.tab3()"><span class="item-tabs" ng-class="{itemTabsActive:vm.showItem3}" ng-bind="vm.itemText3" ></span></div>
+    </div>
+  </header>
+
+  <div class="city-picker-inner">
+    <ion-content  overflow-scroll="false" delegate-handle="item-area-select-modal">
+      <div class="picker-item picker-item1" ng-show="vm.showItem1 === true">
+        <ul class="list">
+          <li class="item" style="padding-top:8px;padding-bottom:8px;" ng-repeat="item1 in vm.areaData1 track by $index" ng-click="vm.select1(item1)">
+          {{item1.name}}
+          </li>
+        </ul>
+      </div>
+
+      <div class="picker-item picker-item2" ng-show="vm.showItem2 === true"> 
+        <ul class="list">
+          <li class="item" style="padding-top:8px;padding-bottom:8px;" ng-repeat="item2 in vm.areaData2 track by $index" ng-click="vm.select2(item2)">
+          {{item2.name}}
+          </li>
+        </ul>
+      </div>
+      <div class="picker-item picker-item3" ng-show="vm.showItem3 === true">
+        <ul class="list">
+          <li class="item" style="padding-top:8px;padding-bottom:8px;" ng-repeat="item3 in vm.areaData3 track by $index" ng-click="vm.select3(item3)">
+          {{item3.name}}
+          </li>
+        </ul>
+      </div>
+      
+    </ion-content>
+  </div>
+
+</div>
+</ion-modal-view>
+</div>
+

@@ -13,7 +13,8 @@ ionic-pickcity是一个基于ionic,利用angularjs实现的app的选择城市区
          
 ```
 <link rel="stylesheet" type="text/css" href="path/ionic-pickcity.css">          
-<script type="text/javascript" src="path/ionic-banner-tips.js"></script>       
+<script type="text/javascript" src="path/dist/ionic-banner-tips.js"></script>
+<script type="text/javascript" src="path/js/ionic-pickcity-service.js"></script>       
 ```  
 (2)在app的module包含依赖bing.ionic.content.banner                 
 ```   

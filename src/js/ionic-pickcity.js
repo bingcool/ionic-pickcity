@@ -63,8 +63,8 @@ angular.module('bing.ionic.pickcity', ['ionic']);
 	  					vm.iconPosition = so.iconPosition || 'item-icon-left',
 	  					vm.iconClass = so.iconClass || 'ion-android-pin',
 	  					vm.title = so.title || '地址',
-	  					vm.closeText = so.closeText || '取消',
-	  					vm.buttonText = so.buttonText || '确定',
+	  					vm.closeText = so.closeText || '<i class="icon ion-close-circled"></i>',
+	  					vm.buttonText = so.buttonText || '<i class="icon ion-checkmark-circled"></i>',
 	  					vm.areaTitle = so.areaTitle || '所在区域';
 
 	  					vm.backdrop = so.backdrop === undefined ? true :(Boolean(so.backdrop) ? true : false);

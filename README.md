@@ -1,4 +1,4 @@
-##ionic-pickcity        
+### ionic-pickcity        
 ####
 ionic-pickcity是一个基于ionic,利用angularjs实现的app的选择城市区域的组件功能，使用了gulp和sass的前端开发工具，当然在实际的使用中，我们只需要用到dist文件下的css和js文件即可。             
 实现功能

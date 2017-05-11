@@ -44,7 +44,8 @@ angular.module('bing.ionic.pickcity', ['ionic']);
 	  		return {
 	  			restrict: 'E',
 	          	scope: {
-	          		options:'=options'
+	          		options:'=options'，
+	          		address:'=address'
 	          	},
 	          	template: '<div class="{{::vm.cssClass}}">'+
 	          				'<a class="item {{::vm.iconPosition}}" href="#" ng-click="vm.showModal($event)">'+
@@ -149,8 +150,12 @@ angular.module('bing.ionic.pickcity', ['ionic']);
 		  						if(vm.item1 && !vm.item2) {
 		  							vm.items = vm.item1;
 		  						}
-								
+
+		  						//指令的双向绑定，返回最终选择的地址
+		  						scope.address = vm.items;
+								//关闭操作板
 								vm.returnCancel();
+								
 								return;
   							}
 		  				}

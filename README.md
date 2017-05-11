@@ -31,16 +31,16 @@ $scope.CityPickData = {
        配置项
 };
 配置项：                
-cssClass: //显示地区选择的样色类，默认'ionic-citypicker list'       
+	cssClass: //显示地区选择的样色类，默认'ionic-citypicker list'       
 	iconPosition：//图标显示位置       
 	iconClass：// 图标类，默认'ion-android-pin'
 	title ：//显示的主题，默认'地址'
 	closeText://取消按钮显示的文本,默认'取消',可以是ionic图标
 	buttonText：//确定按钮的文本，默认'确定',可以是ionic图标
-
 	backdrop：是否显示背景幕，默认是true
-
 	isCache://该UI-router状态所对应的template是否是有缓存的，如果在状态中设置了cache:false,代表是没有缓存，那么必须设置该值iscache:false,如果路由状态中设置了cache:true或者没有设置（默认true),那么这个isCache可以不设置，利用默认的true就可以了。
+
+内部的代码的配置项：
 	itemTab1 ： //代表是第一级的选择项，eg：省份，默认是true,显示出来;
 	itemTab2 ： //代表是第二级的选择项，eg：城市，默认是false,在选择了一级的，才将二级显示出来;
 	itemTab3 ： //代表是第三级的选择项，eg：区，默认是false,在选择了二级的，才将三级显示出来;

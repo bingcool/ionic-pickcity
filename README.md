@@ -23,7 +23,7 @@ angular.module('starter',['ionic','bing.ionic.pickcity'],function() {
 ```	
 (4)在模板中    
 ```
-<ionic-pick-city options='CityPickData'></ionic-pick-city>
+<ionic-pick-city options='CityPickData' address='address'></ionic-pick-city>
 ```
 (4)在控制器中：
 ``` 
@@ -55,7 +55,12 @@ $scope.CityPickData = {
 
 	isHasChild：//判断是否有没有选择完整的地址，如果等于true，表明地址没有选择完整
 ```
-一般不用更改配置项即可使用     
+获取最后选中的地址     
+
+var address = $scope.address;
+
+一般不用更改配置项即可使用    
+
 下面是一个demo:     
 ![pickcity1](/demo/test1.gif "pickcity1")       
 ![pickcity2](/demo/test2.gif "pickcity2")         

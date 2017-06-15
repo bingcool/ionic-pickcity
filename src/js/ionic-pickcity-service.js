@@ -1,3 +1,5 @@
+;(function() {
+
 "use strict";
 angular.module('ionic-pickcity.service', ['ionic']).factory('CityPickerService', function () {
 return [
@@ -12099,3 +12101,5 @@ return [
     }
 ];
 });
+
+})();

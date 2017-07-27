@@ -1,6 +1,6 @@
 ### ionic-pickcity        
 ####
-ionic-pickcity是一个基于ionic,利用angularjs实现的app的选择城市区域的组件功能，使用了gulp和sass的前端开发工具，当然在实际的使用中，我们只需要用到dist文件下的css和js文件即可。             
+ionic-pickcity是一个基于ionic,利用angularjs实现的app的选择城市区域的组件功能，使用了gulp和sass的前端开发工具，当然在实际的使用中，我们只需要用到dist文件下的css和js文件即可，也可以引入src下的js和css，（压缩文件在后来中没有更新，请不要引入min.css和min.js)。             
 实现功能
 ------
 ### 实现功能    
@@ -9,11 +9,12 @@ ionic-pickcity是一个基于ionic,利用angularjs实现的app的选择城市区
 
 用法
 ------
-(1)首先引入js和css       
+(1)首先从src目录下引入js和css       
          
 ```
-<link rel="stylesheet" type="text/css" href="path/ionic-pickcity.css">          
-<script type="text/javascript" src="path/js/ionic-pickcity-service.js"></script>       
+<link rel="stylesheet" type="text/css" href="path/src/css/ionic-pickcity.css">
+<script type="text/javascript" src="path/src/js/ionic-pickcity.js"></script>              
+<script type="text/javascript" src="path/src/js/ionic-pickcity-service.js"></script>       
 ```  
 (2)在app的module包含依赖bing.ionic.pickcity                 
 ```   
